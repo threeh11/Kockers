@@ -3,13 +3,23 @@
 </a>
 <nav class="flex items-center">
     <a href="" class="mr-10 text-sm text-white">
-        About
+        {{ __("О нас") }}
     </a>
     <a href="" class="mr-10 text-sm text-white">
-        More
+        {{ __("Больше") }}
     </a>
-    <a href="" class="text-sm text-white">
-        Account
-    </a>
+    @auth
+        <a href="{{ route("logout") }}" class="text-sm text-white">
+            {{ __("Выход") }}
+        </a>
+    @endauth
+    @guest
+        <a href="{{ route("login") }}" class="mr-10 text-sm text-white">
+            {{ __("Вход") }}
+        </a>
+        <a href="{{ route("register") }}" class="mr-10 text-sm text-white">
+            {{ __("Регистрация") }}
+        </a>
+    @endguest
 </nav>
 
