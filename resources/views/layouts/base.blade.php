@@ -11,20 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body class="h-screen flex flex-col justify-between">
-    <header class="bg-slate-600 py-4">
-        <div class="mx-auto w-[80%] flex justify-between items-center">
+    <header class="py-4">
+        <div class="mx-auto w-[80%] grid grid-cols-3 justify-between items-center">
             @include("includes.header")
         </div>
     </header>
-    <main class="flex bg-slate-700 grow py-6">
+    <main class="grow py-6">
         <div class="mx-auto w-[80%]">
             @yield("content")
         </div>
     </main>
-    <footer class="bg-slate-800">
-        <div class="mx-auto w-[80%] flex justify-between items-center">
-            @include("includes.footer")
-        </div>
-    </footer>
 </body>
 </html>
