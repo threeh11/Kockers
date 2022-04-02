@@ -1,14 +1,11 @@
-<a href="/">
-    <img src="{{ asset("img/logo.png") }}" alt="logo" class="w-20">
-</a>
-<nav class="flex items-center">
-    <a href="" class="mr-10 text-2xl text-white">
+<nav class="flex items-center w-full justify-between py-4">
+    <a href="" class="font-[Raleway] mr-10 text-sm font-medium text-gray-400 hover:text-gray-700">
         About
     </a>
-    <a href="" class="mr-10 text-2xl text-white">
+    <a href="" class="font-[Raleway] mr-10 text-sm font-medium text-gray-400 hover:text-gray-700">
         More
     </a>
-    <a href="" class="text-2xl text-white">
+    <a href="" class="font-[Raleway] text-sm font-medium text-gray-400 hover:text-gray-700">
         Acount
     </a>
 </nav>
